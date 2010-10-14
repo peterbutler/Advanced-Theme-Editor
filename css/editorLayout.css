@@ -1,0 +1,451 @@
+/* @override http://localhost/codesessions/sample_theme/wp-content/plugins/advanced-theme-editor/css/editorLayout.css?ver=3.0 */
+
+/* @override http://localhost/codesessions/sample_theme/wp-content/plugins/advanced-theme-editor/css/editorLayout.css?ver=3.0 */
+
+/* @override http://localhost/codesessions/sample_theme/wp-content/plugins/advanced-theme-editor/css/editorLayout.css?ver=3.0 */
+
+#editor{
+	border: 1px solid #e0e0e0;
+	margin: -2px;
+	position: relative;
+	background: #fff;
+	z-index: 20;
+}
+
+/* @group Editor block */
+
+/* @group Editor Block Top */
+#editorBlockTop{
+	background: url(../images/splitBar.png) repeat-x;
+	height: 25px;
+}
+#codeWindowResize{
+	display: block;
+	width: 100px;
+	height: 25px;
+	line-height: 20px;
+	font-size: 20px;
+	float: left;
+	padding-left: 10px;
+}
+#codeWindowResize a{
+	text-decoration: none;
+	color: #fff;
+}
+#codeWindowResize a:hover{
+	color: #0095ff;
+}
+#currentFile{
+	position: absolute;
+	left: 310px;
+	top: 3px;
+	color: #fff;
+}
+ul#actions{
+	position: absolute;
+	right: 0px;
+}
+ul#actions li{
+	float: left;
+}
+ul#actions li input{
+	display: block;
+	height: 26px;
+	padding: 5px 20px;
+	margin: 0px;
+	text-decoration: none;
+	background: url(../images/buttonSeparator.png) no-repeat;
+	border: none;
+
+}
+ul#actions li input:hover{
+	background: #2d2d2d url(../images/buttonSeparator.png) no-repeat;
+	cursor: pointer;
+}
+input#actionGoLive{
+	color: #00cc00;
+}
+input#actionPreview{
+	color: #cccc00;
+}
+input#actionFileHistory{
+	color: #0095ff;
+}
+/* @end */
+
+#editorBlock{
+	height: 275px;
+	background: #fff;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 100;
+}
+
+
+/* @end */
+
+/* @group Code Block */
+
+/* @group Image Editor */
+#codeWindow.imageEditor #codeWindowTop{
+	display: none;
+}
+#codeWindow.imageEditor img{
+	margin-top: 10px;
+	margin-left: 10px;
+	display: block;
+}
+
+/* @end */
+
+/* @group Text Editor */
+
+#codeWindowTop{
+	height: 25px;
+	padding-top: 1px;
+	position: absolute;
+	width: 10000px;
+	right: 80px;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+#selectorPath{
+	float: right;
+}
+ul#selectorPath li{
+	float: left;
+}
+ul#selectorPath li a{
+	font-size: 10px;
+	color: #666;
+	text-decoration: none;
+	margin: 2px;
+	padding: 1px 5px;
+	background: #f1f1f1;
+	border: 1px solid #e0e0e0;
+	display: block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+ul#selectorPath li a:hover,
+ul#selectorPath li a.selected{
+	color: #333;
+	border: 1px solid #cbcbcb;
+	background-color: #e5e5e5;
+}
+.linedwrap {
+	border: 1px solid #c0c0c0;
+	padding: 0px;
+	margin-top: 25px;
+	width: 100%;
+}
+
+.linedtextarea {
+	padding: 0px;
+	margin: 0px;
+}
+
+.linedtextarea textarea, .linedwrap .codelines .lineno {
+	font-size: 10pt;
+	font-family: monospace;
+	line-height: normal !important;
+}
+
+.linedtextarea textarea {
+	padding: 0px;
+	border: 0;
+}
+
+.linedwrap .lines {
+	margin-top: 0px;
+	width: 40px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #c0c0c0;
+}
+
+.linedwrap .codelines .lineno {
+	color:#333;
+	padding-right: 0.5em;
+	padding-top: 0;
+	text-align: right;
+	white-space: nowrap;
+	background: #f1f1f1;
+}
+
+.linedwrap .codelines .lineselect {
+	color: red;
+}
+
+
+/* @end */
+textarea#code{
+	height: 225px;
+	margin: 0px;
+}
+#codeWindow{
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	left: 281px;
+}
+.CodeMirror-line-numbers{
+	padding-top: 2px;
+	background: #f1f1f1;
+	border-right: 1px solid #ccc;
+	padding-right: 2px;
+}
+.CodeMirror-line-numbers div{
+	padding-top: 1px;
+	font-size: 10px;
+	height: 14px;
+	text-align: right;
+}
+/* @end */
+
+/* @group FileType Tab */
+#fileTypeTab{
+	float: left;
+	width: 30px;
+}
+#fileTypeTab li a{
+	height: 30px;
+	display: block;
+	text-indent: -999999px;
+}
+#fileTypeTab a#filesTab{
+	background: url(../images/tabText/files.png) no-repeat;
+}
+#fileTypeTab a#filesTab:hover,
+#fileTypeTab a#filesTab.selected{
+	background: url(../images/tabText/filesHover.png) no-repeat;
+}
+#fileTypeTab a#CSSTab{
+	background: url(../images/tabText/css.png) no-repeat;
+}
+#fileTypeTab a#CSSTab:hover,
+#fileTypeTab a#CSSTab.selected{
+	background: url(../images/tabText/cssHover.png) no-repeat;
+}
+#fileTypeTab a#HTMLTab{
+	background: url(../images/tabText/html.png) no-repeat;
+}
+#fileTypeTab a#HTMLTab:hover,
+#fileTypeTab a#HTMLTab.selected{
+	background: url(../images/tabText/htmlHover.png) no-repeat;
+}
+#fileTypeTab a#PHPTab{
+	background: url(../images/tabText/php.png) no-repeat;
+}
+#fileTypeTab a#PHPTab:hover,
+#fileTypeTab a#PHPTab.selected{
+	background: url(../images/tabText/phpHover.png) no-repeat;
+}
+#fileTypeTab a#themeHistTab{
+	background: url(../images/tabText/themeHist.png) no-repeat;
+}
+#fileTypeTab a#themeHistTab:hover,
+#fileTypeTab a#themeHistTab.selected{
+	background: url(../images/tabText/themeHistHover.png) no-repeat;
+}
+#fileTypeTab a#fileHistTab{
+	background: url(../images/tabText/fileHist.png) no-repeat;
+}
+#fileTypeTab a#fileHistTab:hover,
+#fileTypeTab a#fileHistTab.selected{
+	background: url(../images/tabText/fileHistHover.png) no-repeat;
+}
+
+/* @end */
+
+/* @group Helper Window */
+#helperWindow{
+	float: left;
+	width: 250px;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	position: relative;
+}
+#helperWindow #helperSearch{
+	background: #000;
+	height: 31px;
+	border-bottom: 2px solid #323232;
+}
+#helperWindow #helperSearch #helperSearchInput{
+	margin: 5px;
+	width:240px;
+	background: #fff;
+	border-color: #000;
+}
+
+#helperWindow #helperSearch #helperSearchInput.default{
+	color: #ccc;
+}
+#helperWindow #helperSearch #helperSearchSubmit{
+	float: right;
+	padding: 8px;
+	background: none;
+	border: none;
+	color: #f1f1f1;
+	text-transform: uppercase;
+}
+#helperWindow #helperSearch #helperSearchSubmit:hover{
+	color: #e0e0e0;
+	cursor: pointer;
+}
+#helperWindow ul{
+	overflow: auto;
+	height: 217px;
+	display: none;
+}
+#helperWindow li{
+	margin: 0;
+	background: #fff;
+	overflow: hidden;
+}
+#helperWindow li.alt{
+	background: #f9f9f9;
+}
+#helperWindow li:hover{
+	background: #f1f1f1;
+}
+#helperWindow li a,
+#helperWindow li.noLink{
+	border-bottom: 1px solid #f1f1f1;
+	display: block;
+	margin: 0px;
+	padding: 6px 5px;
+	text-decoration: none;
+}
+#helperWindow li.noLink{
+	
+}
+#helperWindow ul.selected{
+	display: block;
+}
+#helperWindow ul ul{
+	display: block;
+	height: auto;
+}
+/* @group CSS */
+
+#helperWindow #helperWindowCSS li{
+	white-space: nowrap;
+}
+
+/* @end */
+
+/* @group Files */
+#helperWindow li.folder a{
+	background: url(../images/folder.png) no-repeat 2px center;
+}
+#helperWindow li.txt a,
+#helperWindow li.pot a
+{
+	background: url(../images/txt.png) no-repeat 2px center;
+}
+
+#helperWindow li.php a{
+	background: url(../images/php.png) no-repeat 2px center;
+}
+#helperWindow li.css a{
+	background: url(../images/css.png) no-repeat 2px center;
+}
+#helperWindow li.jpg a,
+#helperWindow li.png a,
+#helperWindow li.gif a,
+#helperWindow li.jpeg a,
+#helperWindow li.tif a{
+	background: url(../images/image_1.png) no-repeat 2px center;
+}
+
+#helperWindow ul#helperWindowFiles li a{
+	padding-left: 22px;
+}
+#helperWindow ul#helperWindowFiles li ul li a{
+	margin-left: 12px;
+}
+#helperWindow ul#helperWindowFiles li ul li ul li a{
+	margin-left: 22px;
+}
+#helperWindow ul#helperWindowFiles li ul li ul li ul li a{
+	margin-left: 32px;
+}
+#helperWindow ul#helperWindowFiles li ul li ul li ul li ul li a{
+	margin-left: 42px;
+}
+#helperWindow ul ul{
+	display: none;
+}
+#helperWindow ul#helperWindowFiles li.drophover a{
+	background: #0095ff;
+;
+}
+/* @end */
+
+
+
+/* @end */
+
+
+#previewWindowTopper{
+	background: url(../images/splitBar.png) repeat-x;
+	height: 25px;
+}
+
+/* @group Preview Window */
+
+/* @group Overlays */
+.marginHighlightDiv{
+	background: blue;
+}
+.highlightDiv{
+	border: 1px solid #000;
+	background: #ff0000;
+}
+
+
+/* @end */
+
+/* @group Preview Window Top */
+
+#previewWindowTopper h3{
+	margin: 0px;
+	color: #fff;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 15px;
+	float: left;
+}
+#previewWindowTopper label{
+	float: right;
+	line-height: 25px;
+	color: #fff;
+	font-size: 12px;
+	padding-right: 10px;
+}
+#previewWindowTopper input,
+#previewWindowTopper select{
+	float: right;
+	margin-top: 1px;
+}
+#previewWindowTopper #fullScreen{
+	float: right;
+	line-height: 25px;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 0 5px;
+}
+
+
+
+/* @end */
+
+
+
+/* @end */
