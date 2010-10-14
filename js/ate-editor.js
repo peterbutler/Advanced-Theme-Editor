@@ -76,8 +76,11 @@ jQuery(document).ready(function($) {
     $("#previewWindow").contents().find(".highlightDiv").remove();
     $("#previewWindow").contents().find(selector).each(function(){
       offset = $(this).offset();
-      offset.top -= $(window).scrollTop();
-      offset.top += $("#previewWindow").contents().scrollTop();
+
+      if($(window).scrollTop() != 0){
+        offset.top += $("#previewWindow").contents().scrollTop();
+        offset.top -= $(window).scrollTop();
+      }
       
       width  = $(this).outerWidth();
       height = $(this).outerHeight();
